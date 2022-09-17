@@ -3,7 +3,7 @@ const app = express();
 const env = require("dotenv").config();
 const cookieParser = require("cookie-parser");
 
-const userRouter = require("./routes/user");
+const userRouter = require("../routes/user");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
